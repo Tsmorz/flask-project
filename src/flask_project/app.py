@@ -1,10 +1,9 @@
 """Sample doc string."""
 
-import argparse
-
-from {{ cookiecutter.module_name }}.definitions import DEFAULT_LOG_LEVEL, LogLevel
-from {{ cookiecutter.module_name }}.utils import setup_logger
 from loguru import logger
+
+from flask_project.definitions import DEFAULT_LOG_LEVEL
+from flask_project.utils import setup_logger
 
 
 def main(

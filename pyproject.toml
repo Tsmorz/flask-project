@@ -1,11 +1,11 @@
 [project]
-name = "{{ cookiecutter.package_name }}"
-version = "{{ cookiecutter.version }}"
-description = "{{ cookiecutter.description }}"
+name = "flask-project"
+version = "0.0.1alpha"
+description = "A basic Flask demo"
 readme = "README.md"
 authors = [
     { name = "Tony Smoragiewicz", email = "tony.smoragiewicz@tum.de" },
-    { name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}" }
+    { name = "Tony Smoragiewicz", email = "tonysmoragiewicz@gmail.com" }
 ]
 requires-python = ">=3.11,<3.14"
 
@@ -25,7 +25,7 @@ dev = [
 ]
 
 [project.urls]
-homepage = "https://github.com/{{ cookiecutter.org_name }}/{{ cookiecutter.repo_name }}"
+homepage = "https://github.com/Tsmorz/flask-project"
 
 # -------------------------
 #       RUFF (LINT + TYPE CHECK)
@@ -74,7 +74,7 @@ lint.ignore = [
 fix = true
 
 [tool.ruff.lint.isort]
-known-first-party = ["{{ cookiecutter.package_name }}"]
+known-first-party = ["flask-project"]
 combine-as-imports = true
 
 [tool.ruff.lint.pydocstyle]

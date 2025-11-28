@@ -40,11 +40,11 @@ update-deep:
 	make update
 
 docker:
-	docker build --no-cache -f Dockerfile -t {{ cookiecutter.module_name }}-smoke .
-	docker run --rm {{ cookiecutter.module_name }}-smoke
+	docker build --no-cache -f Dockerfile -t flask_project-smoke .
+	docker run --rm flask_project-smoke
 
 app:
-	uv run python -m {{ cookiecutter.module_name }}
+	uv run python -m flask_project
 
 tree:
 	uv run python repo_tree.py --update-readme

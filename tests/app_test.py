@@ -1,6 +1,6 @@
 """Test the main program."""
 
-from {{ cookiecutter.module_name }}.app import main
+from flask_project.app import main
 
 
 def test_main():

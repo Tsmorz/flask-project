@@ -3,8 +3,8 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from {{ cookiecutter.module_name }}.definitions import LogLevel
-from {{ cookiecutter.module_name }}.utils import setup_logger
+from flask_project.definitions import LogLevel
+from flask_project.utils import setup_logger
 
 
 def test_logger_init() -> None:

@@ -2,12 +2,8 @@
 
 import argparse
 
-from loguru import logger
-
-from {{ cookiecutter.module_name }}.app import main
-from {{ cookiecutter.module_name }}.definitions import DEFAULT_LOG_LEVEL, LogLevel
-from {{ cookiecutter.module_name }}.utils import setup_logger
-
+from flask_project.app import main
+from flask_project.definitions import DEFAULT_LOG_LEVEL, LogLevel
 
 if __name__ == "__main__":  # pragma: no cover
     parser = argparse.ArgumentParser("Run the pipeline.")

@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
 # Select the package and version at build time
-ARG PKG={{ cookiecutter.module_name }}
+ARG PKG=flask_project
 ARG VER=latest
 ENV PKG=${PKG} VER=${VER}
 
